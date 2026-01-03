@@ -1,0 +1,140 @@
+.auth-container2 {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #b7dff1, #8ce4ec);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.welcome {
+  margin: 20px !important;
+  font-size: 45px;
+  color: #4739db;
+}
+
+.auth-box {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  padding: 20px !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.auth-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.auth-toggle button {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #444;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-toggle button.active {
+  color: #4830e4;
+  border-color: #291ce0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+
+.mobile-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+  height: 50px;
+  width: 100%;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.input:focus {
+  border-color: #4739db;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.btnauth {
+  background: #1c1fba;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 50px;
+}
+
+
+.auth-container2 .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-container2 .social-icons a {
+  display: inline-flex;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+/* Responsivlik */
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 24px 16px;
+  }
+
+  .auth-toggle button {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}

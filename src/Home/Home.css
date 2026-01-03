@@ -1,0 +1,367 @@
+
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 90px;
+  color: #333;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, #3232ec, #6f7cf0);
+  margin: 40px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.explore {
+  text-align: center;
+  padding: 60px 20px 80px;
+}
+
+.explore h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #443cdd;
+  font-weight: 700;
+}
+
+.explore p {
+  margin: 20px auto 50px;
+  font-size: 1.3rem;
+  max-width: 700px;
+    color: #312e74;
+
+}
+
+.explore h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #443cdd;
+}
+
+.explore .btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #4f6aef;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 20%;
+}
+
+.explore .btn:hover {
+  background-color: #3249bd;
+  cursor: pointer;
+}
+
+.destinations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 40px 0 50px;
+}
+
+.destination-card {
+  width: 220px;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.destination-card h3 {
+  margin: 15px 0 10px 0;
+  font-size: 1.3rem;
+  color: #3a33c4;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.destination-card p {
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 0;
+
+}
+
+.planner {
+  padding: 80px 20px 100px;
+  text-align: center;
+  /* background: #fdf8ed; */
+  position: relative;
+}
+
+.planner h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #443cdd;
+}
+
+.planner p {
+  margin: 0 auto 50px;
+  font-size: 1.25rem;
+  max-width: 600px;
+  color: #312e74;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.508);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.479);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.574);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.firstcard {
+  background-image: url('https://images.unsplash.com/photo-1631981990676-f484d47adaa2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.secondcard {
+  background-image: url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.thirdcard {
+  background-image: url('https://images.unsplash.com/photo-1748164521179-ae3b61c6dd90?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.card h3, .card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 19px;
+  font-weight: 400;
+  color: white;
+}
+
+.planner .btn-secondary {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 40px;
+  background-color: #4f6aef;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 20%;
+}
+
+.planner .btn-secondary:hover {
+  background-color: #3249bd;
+}
+
+.testimonials {
+  padding: 70px 20px 100px;
+  /* background-color: #fff; */
+  text-align: center;
+  color: #444;
+}
+
+.testimonials h2 {
+  font-size: 2.75rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #f7f7f7;
+  padding: 30px 25px;
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #555;
+  cursor: default;
+
+}
+
+.review-card:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  transform: scale(1.1);
+}
+
+.review-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.review-card h4 {
+  font-weight: 600;
+  color: #443cdd;
+}
+
+.footer {
+  background-color: #222;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #ddd;
+  width: 100%;
+}
+
+.footer nav {
+  margin-top: 15px;
+}
+
+.footer a {
+  color: #443cdd;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f0d96f;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .destinations {
+    justify-content: center;
+  }
+
+  .destination-card {
+    width: 180px;
+  }
+
+  .planner .btn-secondary {
+    /* width: 80%; */
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+
+  .cards-container {
+    gap: 25px;
+  }
+
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .reviews {
+    gap: 20px;
+  }
+
+  .review-card {
+    width: 90%;
+  }
+
+    .planner .btn-secondary, .explore .btn {
+  /* padding: 5px; */
+  width: 20%;
+  font-size: 14px;
+}
+}
+
+@media (max-width: 480px) {
+  .explore h1 {
+    font-size: 2rem;
+  }
+
+  .explore p {
+    font-size: 1.1rem;
+  }
+
+  .explore h2 {
+    font-size: 1.5rem;
+  }
+
+  .planner h2 {
+    font-size: 2.2rem;
+  }
+
+  .planner p {
+    font-size: 1.1rem;
+  }
+
+  .planner .btn-secondary, .explore .btn {
+  /* padding: 5px; */
+  width: 30%;
+  font-size: 14px;
+}
+}

@@ -1,0 +1,282 @@
+.amadeus-flight-search {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 0 auto 50px auto;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.amadeus-flight-search .inputs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 20px;
+  align-items: center;
+}
+
+.amadeus-flight-search label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.amadeus-flight-search input[type="text"],
+.amadeus-flight-search input[type="date"] {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.amadeus-flight-search button {
+  background-color: #0a9396;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.amadeus-flight-search button:disabled {
+  background-color: #7ec4c5;
+  cursor: not-allowed;
+}
+
+.amadeus-flight-search button:hover:not(:disabled) {
+  background-color: #007f85;
+}
+
+.flight-results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.flight-offer {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.flight-offer p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.flight-offer a {
+  color: #0a9396;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.flight-offer a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #d00000;
+  font-weight: 700;
+}
+
+
+
+.amadeus-flight-search .inputs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap; /* inputlar və button eyni səviyyədə, sətirə sığmalıdır */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.amadeus-flight-search .inputs > div {
+  flex: 1; /* hər input öz sahəsini bərabər bölüşəcək */
+  min-width: 120px; /* kiçik ekranlarda daralmaya imkan */
+}
+
+.amadeus-flight-search input[type="text"],
+.amadeus-flight-search input[type="date"] {
+  width: 100%; /* valideyn div-in içində tam dolsun */
+  box-sizing: border-box;
+}
+
+.amadeus-flight-search button {
+  flex: 0 0 auto; /* button öz ölçüsündə qalsın, genişlənməsin */
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+
+
+.amadeus-flight-search {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 0 auto 50px auto;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.amadeus-flight-search .inputs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 20px;
+  align-items: center;
+}
+
+.amadeus-flight-search label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.amadeus-flight-search input[type="text"],
+.amadeus-flight-search input[type="date"] {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.amadeus-flight-search button {
+  background-color: #0a9396;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.amadeus-flight-search button:disabled {
+  background-color: #7ec4c5;
+  cursor: not-allowed;
+}
+
+.amadeus-flight-search button:hover:not(:disabled) {
+  background-color: #007f85;
+}
+
+.flight-results {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.flight-offer {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.flight-offer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.flight-offer .logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.flight-offer p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+
+.flight-offer a {
+  margin-top: auto;
+  color: #0a9396;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #e1e1e1;
+  display: block;
+  border-radius: 0 0 12px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.flight-offer a:hover {
+  background-color: #0a9396;
+  color: white;
+}
+
+.error {
+  color: #d00000;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+/* Mobil cihazlar (480px və aşağısı üçün) */
+@media (max-width: 480px) {
+  .amadeus-flight-search .inputs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .amadeus-flight-search .inputs > div {
+    width: 100%;
+  }
+
+  .amadeus-flight-search button {
+    width: 100%;
+  }
+
+  .flight-results {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .amadeus-flight-search .inputs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .amadeus-flight-search .inputs > div {
+    flex: 1 1 45%;
+  }
+
+  .amadeus-flight-search button {
+    flex: 1 1 100%;
+    margin-top: 10px;
+  }
+
+  .flight-results {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

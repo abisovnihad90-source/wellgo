@@ -1,0 +1,130 @@
+.map-section {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-size: 44px;
+    color: #443cdd;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.map-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.map-wrapper {
+  overflow: hidden;
+}
+
+.leaflet-container {
+  width: 90%;
+  max-width: 1000px;
+  height: 480px;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+  max-width: 240px;
+  word-wrap: break-word;
+}
+
+.popup-content h4 {
+  margin: 0 0 4px;
+  color: #333;
+}
+
+.popup-content small {
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.popup-content p {
+  font-size: 14px;
+  color: #444;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+  .leaflet-container {
+    height: 320px;
+    width: 95%;
+  }
+
+  .map-section h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+.map-description {
+  text-align: center;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.no-markers {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 0;
+}
+
+
+
+@media (max-width: 480px) {
+  .leaflet-container {
+    height: 260px;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .map-section {
+    margin: 60px 10px;
+  }
+
+  .map-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  .map-description, .no-markers {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .map-section {
+    margin-top: 100px;
+  }
+}
+
+/* Orta ekranlar - tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .leaflet-container {
+    height: 400px;
+    width: 90%;
+  }
+
+  .map-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .map-description {
+    font-size: 1.1rem;
+  }
+}

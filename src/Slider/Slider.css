@@ -1,0 +1,191 @@
+.slider {
+  position: relative;
+  max-width: 1200px;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.5s ease;
+  margin-bottom: 20px;
+  margin-top: 130px;
+}
+
+.slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* yarı şəffaf qara */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slider-title {
+  margin: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.slider-description {
+  font-size: 23px;
+  color: white;
+  font-style: italic;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f6f6c9;
+  border: none;
+  border-radius: 50%;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  user-select: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #6b84c4;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev, .next {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  position: absolute;
+  bottom: 15px; /* Slider-in altından məsafə */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Nöqtələr arası məsafə */
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #4f68e2;
+}
+
+.overlay {
+  pointer-events: none;
+}
+
+.dots {
+  pointer-events: auto;
+}
+
+
+/* Mobil üçün əsas media query */
+@media (max-width: 768px) {
+  .slider {
+    height: 220px;
+    padding: 20px 15px;
+  }
+
+  .slider-title {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+
+  .slider-description {
+    font-size: 16px;
+  }
+
+  .slider-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .dots {
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Kiçik ekranlar üçün (məsələn, telefon portreti) */
+@media (max-width: 480px) {
+  .slider {
+    height: 180px;
+    padding: 15px 10px;
+  }
+
+  .slider-title {
+    font-size: 18px;
+  }
+
+  .slider-description {
+    font-size: 14px;
+  }
+
+  .slider-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .prev {
+    left: 8px;
+  }
+
+  .next {
+    right: 8px;
+  }
+
+  .dots {
+    bottom: 8px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
