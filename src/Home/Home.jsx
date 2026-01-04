@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "../Slider/Slider";
 import "./Home.css"
+import {Link} from "react-router-dom";
 
 export default function Home() {
   const [cities, setCities] = useState([]);
@@ -54,7 +55,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <a href="/wellgo/explore/" className="btn">Start Exploring</a>
+        <Link to = "/explore" className="btn">Start Exploring</Link>
       </section>
 
       <section className="planner">
@@ -75,7 +76,7 @@ export default function Home() {
             <p>Get suggestions for top attractions, restaurants, and hidden gems.</p>
           </div>
         </div>
-        <a href="/wellgo/planner/" className="btn-secondary">Plan Your Trip</a>
+        <Link to = "/planner" className="btn-secondary">Plan Your Trip</Link>
       </section>
 
       <section className="testimonials">
@@ -107,7 +108,7 @@ export default function Home() {
       <footer className="footer">
         <p>© 2026 WellGo. All rights reserved.</p>
         <nav>
-          <a href="/wellgo/about/">About Us</a> | <a href="/wellgo/contact/">Contact</a> | <a href="/wellgo/privacy/">Privacy Policy</a>
+          <Link to="/about">About Us</Link> | <Link to="/contact">Contact</Link> | <Link to="/privacy">Privacy Policy</Link>
         </nav>
       </footer>
     </div>
