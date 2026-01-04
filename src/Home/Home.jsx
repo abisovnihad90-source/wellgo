@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <Link to = "/explore" className="btn">Start Exploring</Link>
+        <Link to = "/wellgo/explore" className="btn">Start Exploring</Link>
       </section>
 
       <section className="planner">
@@ -76,7 +76,7 @@ export default function Home() {
             <p>Get suggestions for top attractions, restaurants, and hidden gems.</p>
           </div>
         </div>
-        <Link to = "/planner" className="btn-secondary">Plan Your Trip</Link>
+        <Link to = "/wellgo/planner" className="btn-secondary">Plan Your Trip</Link>
       </section>
 
       <section className="testimonials">
